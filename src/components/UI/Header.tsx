@@ -1,41 +1,30 @@
 import { NavLink } from "react-router-dom";
 
 function Header() {
-    return (<>
-        <header className="">
-            <nav className="grid grid-cols-[1fr,2fr] sm:flex-row justify-between items-center py-3 px-[8%] max-w-7xl mx-auto transition-all duration-300">
-                <h1>MEDIPLUS</h1>
+  return (
+    <header className="bg-white shadow-sm">
+      <nav className="flex justify-between items-center py-3 px-[8%] max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold">MEDIPLUS</h1>
 
-                <ul className="flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10">
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Doctor</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Services</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Pages</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Blogs</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Contact Us</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="">
-                            <button className="bg-blue-500 px-2 py-1 text-white hover:bg-blue-900">
-                                Appointment
-                            </button>
-                        </NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </>);
+        <div className="flex items-center gap-12">
+          <ul className="flex items-center gap-6 md:gap-10 text-black font-medium">
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/">Doctor</NavLink></li>
+            <li><NavLink to="/">Services</NavLink></li>
+            <li><NavLink to="/">Pages</NavLink></li>
+            <li><NavLink to="/">Blogs</NavLink></li>
+            <li><NavLink to="/">Contact Us</NavLink></li>
+          </ul>
+
+          <NavLink to="">
+            <button className="bg-primary px-6 py-2 ml-5 rounded text-white font-semibold hover:bg-primary-dark transition">
+              Appointment
+            </button>
+          </NavLink>
+        </div>
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

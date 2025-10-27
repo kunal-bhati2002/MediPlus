@@ -11,3 +11,8 @@
     --color-primary: #0056b3;
     --color-primary-dark: #003a80;
 }
+
+.container{
+    width:80%;
+    margin:0 auto;
+}

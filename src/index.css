@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 :root {
     --color-primary: #007BFF;
     --color-primary-dark: #0056b3;
@@ -10,9 +18,4 @@
 .dark {
     --color-primary: #0056b3;
     --color-primary-dark: #003a80;
-}
-
-.container{
-    width:80%;
-    margin:0 auto;
 }

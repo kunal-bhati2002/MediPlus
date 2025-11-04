@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoReorderThreeOutline, IoCloseOutline } from "react-icons/io5";
+import Button from "../common/Button";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,9 +41,7 @@ function Header() {
 
           <li>
             <NavLink to="/">
-              <button className="bg-primary px-5 py-2 lg:px-6 lg:py-2.5 rounded-md text-white font-semibold hover:bg-primary-dark transition text-sm sm:text-base">
-                Appointment
-              </button>
+              <Button variant="primary">Appointment</Button>
             </NavLink>
           </li>
         </ul>

@@ -1,7 +1,5 @@
 // import { FaLongArrowAltRight } from "react-icons/fa";
 
-import InfoCard from "../common/InfoCard";
-
 // function Card() {
 //     return (<>
 //         <section className=" container mx-auto grid grid-cols-3">
@@ -18,16 +16,17 @@ import InfoCard from "../common/InfoCard";
 
 // export default Card
 
+import InfoCard from "../common/InfoCard";
 
 function CardSection() {
     return (
-        <section className="container mx-auto grid md:grid-cols-3 gap-6 p-6">
+        <section className="container mx-auto sm:px-6 md:px-20 grid md:grid-cols-3 gap-6 px-4">
             <InfoCard
                 label="24/7 Support"
                 title="Emergency Cases"
                 description="Our emergency department is open around the clock for immediate medical attention. Contact us anytime for urgent care and ambulance services."
                 linkText="LEARN MORE"
-                bgColor="bg-primary"
+                className="relative bottom-28 transform hover:-translate-y-2.5 transition-transform duration-200 hover:shadow-2xl hover:shadow-primary"
             />
 
             <InfoCard
@@ -35,7 +34,7 @@ function CardSection() {
                 title="Doctors Timetable"
                 description="Check out our weekly doctors’ schedule and book your appointment in advance. Specialists are available Monday to Saturday from 9:00 AM to 8:00 PM."
                 linkText="VIEW SCHEDULE"
-                bgColor="bg-blue-600"
+                className="relative bottom-28 transform hover:-translate-y-2.5 transition-transform duration-200 hover:shadow-2xl hover:shadow-primary"
             />
 
             <InfoCard
@@ -43,7 +42,7 @@ function CardSection() {
                 title="Opening Hours"
                 description="Our hospital is open every day for your convenience. Regular OPD: Mon–Sat 8:00 AM – 8:00 PM, Sunday 9:00 AM – 4:00 PM."
                 linkText="CONTACT US"
-                bgColor="bg-teal-600"
+                className="relative bottom-28 transform hover:-translate-y-2.5 transition-transform duration-200 hover:shadow-2xl hover:shadow-primary"
             />
         </section>
     );

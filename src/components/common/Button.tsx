@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ButtonProps {
-    variant?: "primary" | "primary-dark";
+    variant?: "primary" | "primary-dark" | "custom";
     size?: "sm" | "md" | "lg";
     children: React.ReactNode;
     onClick?: () => void;
@@ -15,13 +15,15 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     className = "",
 }) => {
-    const baseStyle = "rounded-sm w-full font-medium transition-colors duration-200";
+    const baseStyle = "rounded-sm font-medium transition-colors duration-200";
 
     // 🟩 Variant styles
     const variantStyle =
         variant === "primary"
             ? "bg-primary hover:bg-primary-dark text-white"
-            : "bg-primary-dark hover:bg-primary text-white";
+            : variant === "primary-dark"
+                ? "bg-primary-dark hover:bg-primary text-white"
+                : "";
 
     // 📏 Size styles
     const sizeStyle =

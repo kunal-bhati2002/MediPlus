@@ -1,5 +1,6 @@
 import { FaFacebook, FaGooglePlusG, FaPinterestP, FaSquareTwitter, FaVimeoV } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import Button from "../common/Button";
 
 function Footer() {
     return (
@@ -66,12 +67,12 @@ function Footer() {
                             placeholder="Enter your email"
                             className="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none"
                         />
-                        <button
-                            type="submit"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition"
+                        <Button
+                            variant="primary"
                         >
                             Subscribe
-                        </button>
+
+                        </Button>
                     </form>
                 </div>
             </section>

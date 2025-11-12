@@ -1,4 +1,8 @@
 import type { JSX } from "react";
+import { FaHeart, FaTooth } from "react-icons/fa6";
+import { IoEyeSharp } from "react-icons/io5";
+import { LuNotepadText } from "react-icons/lu";
+import { MdBloodtype, MdHearing } from "react-icons/md";
 import { TbActivityHeartbeat } from "react-icons/tb";
 
 function Services() {
@@ -15,12 +19,12 @@ function Services() {
                 </p>
             </div>
             <div className="">
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
-                <ContentComponent icon={<TbActivityHeartbeat />} heading="Hello" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<LuNotepadText />} heading="General Treatment" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<FaTooth />} heading="Teeth Whitening" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<FaHeart />} heading="Heart Surgery" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<MdHearing />} heading="Ear Treatment" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<IoEyeSharp />} heading="Vision Problems" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
+                <ContentComponent icon={<MdBloodtype />} heading="Blood Transfusion" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
             </div>
         </section>
     </>);
@@ -37,15 +41,15 @@ interface contentProps {
 const ContentComponent = ({ icon, heading, para }: contentProps) => {
 
     return (<>
-        <div className="flex gap-4 my-4">
+        <div className="flex gap-4 mb-8">
             <div>
                 <span className="text-blue-500 text-4xl inline-block mb-4">
                     {icon}
                 </span>
             </div>
             <div>
-                <h4 className="text-xl font-semibold">{heading}</h4>
-                <p className="text-gray-600">{para}</p>
+                <a href="" className="text-xl font-semibold hover:text-primary hover:cursor-pointer">{heading}</a>
+                <p className="text-gray-600 my-2">{para}</p>
             </div>
         </div>
     </>);

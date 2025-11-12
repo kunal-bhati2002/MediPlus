@@ -19,8 +19,6 @@ function Portfolio() {
                 <Carousel />
             </div>
         </section>
-
-
     );
 }
 

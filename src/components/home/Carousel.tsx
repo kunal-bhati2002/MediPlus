@@ -19,7 +19,7 @@ export default function Carousel() {
   return (
     <section className="w-full bg-white py-16">
       {/* Swiper Section */}
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative  mx-auto">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={20}
@@ -37,7 +37,7 @@ export default function Carousel() {
             320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 },
+            1280: { slidesPerView: 3.5 },
           }}
           className="mySwiper"
         >

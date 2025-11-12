@@ -5,6 +5,7 @@ import EmergencyNumber from "../components/home/EmergencyNumber";
 import HelpingFamily from "../components/home/HelpingFamily";
 import ImproveHealth from "../components/home/ImproveHealth";
 import Portfolio from "../components/home/Portfolio";
+import Services from "../components/home/Services";
 
 function Home() {
     return (<>
@@ -15,6 +16,7 @@ function Home() {
         <ImproveHealth />
         <EmergencyNumber />
         <Portfolio />
+        <Services />
     </>);
 }
 

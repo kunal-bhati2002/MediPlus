@@ -62,7 +62,7 @@ import Button from "../common/Button";
 function EmergencyNumber() {
     return (
         <section
-            className="relative h-[80vh] flex items-center justify-center bg-[url('/images/MRI_scan_photo.webp')] bg-cover bg-center bg-no-repeat"
+            className="relative h-[80vh] flex items-center justify-center bg-[url('/images/MRI_scan_photo.webp')] bg-cover  bg-no-repeat bg-fixed"
         >
             {/* Blue Overlay */}
             <div className="absolute inset-0 bg-blue-600/85"></div>

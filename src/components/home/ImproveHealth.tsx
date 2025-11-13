@@ -19,7 +19,7 @@ function ImproveHealth() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 mt-3">
+            <div className="grid gap-10 md:grid-cols-2 mt-3 ">
                 <div>
                     <h4 className="text-2xl font-semibold">
                         Who We Are

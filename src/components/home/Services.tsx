@@ -18,7 +18,7 @@ function Services() {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis sit repellendus?
                 </p>
             </div>
-            <div className="">
+            <div className="xl:w-[80%] xl:mx-auto md:grid grid-cols-3 gap-8">
                 <ContentComponent icon={<LuNotepadText />} heading="General Treatment" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
                 <ContentComponent icon={<FaTooth />} heading="Teeth Whitening" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />
                 <ContentComponent icon={<FaHeart />} heading="Heart Surgery" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum laboriosam, iure ab quas velit!" />

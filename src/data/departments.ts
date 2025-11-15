@@ -1,7 +1,4 @@
-// import type { Department } from "../components/home/DepartmentTabs";
-
 export const departments = [
-  // export const departments: Department[] = [
   // 1️⃣ CARDIAC CLINIC
   {
     id: "cardiac",

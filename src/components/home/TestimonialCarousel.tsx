@@ -53,7 +53,7 @@ export default function TestimonialCarousel() {
                         320: { slidesPerView: 1 },
                         640: { slidesPerView: 1 },
                         1024: { slidesPerView: 2 },
-                        // 1280: { slidesPerView: 3 },
+                        1280: { slidesPerView: 3 },
                     }}
                     className="mySwiper"
                 >
@@ -135,7 +135,8 @@ const TestimonialContent = ({ image, comment, name }: TestimonialDetails) => {
             <img
                 src={image}
                 alt={name}
-                className="w-16 h-16 rounded-full absolute left-1/2 -translate-x-1/2 top-full -mt-8 z-10"
+                // className="w-16 h-16 rounded-full absolute left-12 -translate-x-1/2 top-full -mt-8 z-10"
+                className="w-16 h-16 rounded-full relative top-10 z-20"
             />
         </div>
     );

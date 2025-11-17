@@ -6,6 +6,7 @@ import EmergencyNumber from "../components/home/EmergencyNumber";
 import HelpingFamily from "../components/home/HelpingFamily";
 import ImproveHealth from "../components/home/ImproveHealth";
 import Portfolio from "../components/home/Portfolio";
+import Pricing from "../components/home/Pricing";
 import Services from "../components/home/Services";
 import Testimonials from "../components/home/Testimonials";
 
@@ -21,6 +22,7 @@ function Home() {
         <Services />
         <Testimonials />
         <Departments />
+        <Pricing />
     </>);
 }
 

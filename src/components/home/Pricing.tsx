@@ -20,34 +20,51 @@ function Pricing() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-                <Pricecard icon={<RiScissors2Fill />} name="Plastic Surgery" price={200}
+
+                {/* Plastic Surgery */}
+                <Pricecard
+                    icon={<RiScissors2Fill />}
+                    name="Plastic Surgery"
+                    price={199}
                     points={[
-                        { text: "Lorem Ipsum Dolor Sit", available: true },
-                        { text: "Cubitur Sollicitudin Fentum", available: true },
-                        { text: "Nullam Interdum Enim", available: false },
-                        { text: "Donec Ultricies Metus", available: false },
-                        { text: "Pellentesque Eget Nibh", available: false },
+                        { text: "Initial Consultation", available: true },
+                        { text: "Minor Corrective Procedure", available: true },
+                        { text: "Post-Procedure Dressing", available: true },
+                        { text: "Advanced Reconstruction", available: false },
+                        { text: "Full Cosmetic Makeover", available: false },
                     ]}
                 />
-                <Pricecard icon={<FaTooth />} name="Plastic Surgery" price={200}
+
+                {/* Teeth Whitening */}
+                <Pricecard
+                    icon={<FaTooth />}
+                    name="Teeth Whitening"
+                    price={299}
                     points={[
-                        { text: "Lorem Ipsum Dolor Sit", available: true },
-                        { text: "Cubitur Sollicitudin Fentum", available: true },
-                        { text: "Nullam Interdum Enim", available: false },
-                        { text: "Donec Ultricies Metus", available: false },
-                        { text: "Pellentesque Eget Nibh", available: false },
+                        { text: "Dental Examination", available: true },
+                        { text: "Laser Whitening Session", available: true },
+                        { text: "Stain Removal Treatment", available: true },
+                        { text: "Home Whitening Kit", available: false },
+                        { text: "Advanced Veneer Package", available: false },
                     ]}
                 />
-                <Pricecard icon={<FaHeart />} name="Plastic Surgery" price={200}
+
+                {/* Heart Surgery */}
+                <Pricecard
+                    icon={<FaHeart />}
+                    name="Heart Surgery"
+                    price={399}
                     points={[
-                        { text: "Lorem Ipsum Dolor Sit", available: true },
-                        { text: "Cubitur Sollicitudin Fentum", available: true },
-                        { text: "Nullam Interdum Enim", available: false },
-                        { text: "Donec Ultricies Metus", available: false },
-                        { text: "Pellentesque Eget Nibh", available: false },
+                        { text: "Cardiology Consultation", available: true },
+                        { text: "ECG & Basic Health Check", available: true },
+                        { text: "Pre-Surgery Evaluation", available: true },
+                        { text: "ICU Care & Monitoring", available: false },
+                        { text: "Post-Surgery Rehabilitation", available: false },
                     ]}
                 />
+
             </div>
+
         </section>
     </>);
 }
@@ -95,7 +112,7 @@ const Pricecard = ({ icon, name, price, points }: PriceCardContent) => {
             <ul className="text-left space-y-4 mb-6 flex-grow">
                 {points.map((point, index) => (
                     <li key={index}
-                        className="flex justify-between items-center text-gray-700"
+                        className="flex justify-between items-center text-gray-700 gap-20"
                     >
                         <p>{point.text}</p>
                         {point.available ? (

@@ -1,4 +1,5 @@
 import Banner from "../components/home/Banner";
+import Blog from "../components/home/Blog";
 import Card from "../components/home/Card";
 import CountTimer from "../components/home/CountTimer";
 import Departments from "../components/home/Departments";
@@ -23,6 +24,7 @@ function Home() {
         <Testimonials />
         <Departments />
         <Pricing />
+        <Blog />
     </>);
 }
 

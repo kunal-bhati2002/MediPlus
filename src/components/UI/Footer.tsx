@@ -69,9 +69,9 @@ function Footer() {
                         />
                         <Button
                             variant="primary"
+                            size="lg"
                         >
                             Subscribe
-
                         </Button>
                     </form>
                 </div>

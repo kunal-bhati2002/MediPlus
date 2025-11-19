@@ -58,8 +58,8 @@ const BlogContent = ({ image, date, heading, para }: BlogData) => {
                 <p className="text-gray-600 text-base mt-4">{para}</p>
             </div>
         </div> */}
-        {/* <div className="relative shadow-md overflow-hidden group">
-        
+        <div className="relative shadow-md overflow-hidden group">
+
             <div className="absolute bottom-0 left-0 h-[3px] bg-primary w-0 transition-all duration-500 group-hover:w-full"></div>
 
             <img src={image} alt="" className="w-full h-[250px]" />
@@ -71,27 +71,6 @@ const BlogContent = ({ image, date, heading, para }: BlogData) => {
                 </h4>
                 <p className="text-gray-600 text-base mt-4">{para}</p>
             </div>
-        </div> */}
-        <div className="relative shadow-md overflow-hidden group">
-            <img src={image} alt="" className="w-full h-[250px]" />
-
-            <div className="px-4 py-8">
-                <span className="text-white bg-primary rounded-md px-3 py-2">{date}</span>
-                <h4 className="text-xl hover:text-primary hover:cursor-pointer mt-3 font-semibold">{heading}</h4>
-                <p className="text-gray-600 text-base mt-4">{para}</p>
-            </div>
-
-            {/* Border animation from center */}
-            <div className="
-        absolute bottom-0 left-1/2
-        h-[3px] bg-primary 
-        w-0
-        -translate-x-1/2
-        transition-all duration-500
-        group-hover:w-full
-    "></div>
         </div>
-
-
     </>);
 }

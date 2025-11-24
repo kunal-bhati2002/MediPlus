@@ -1,3 +1,4 @@
+import AppointmentForm from "../components/home/AppointmentForm";
 import Banner from "../components/home/Banner";
 import Blog from "../components/home/Blog";
 import Card from "../components/home/Card";
@@ -27,6 +28,7 @@ function Home() {
         <Pricing />
         <Blog />
         <Client />
+        <AppointmentForm />
     </>);
 }
 

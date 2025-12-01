@@ -8,6 +8,7 @@ import Departments from "../components/home/Departments";
 import EmergencyNumber from "../components/home/EmergencyNumber";
 import HelpingFamily from "../components/home/HelpingFamily";
 import ImproveHealth from "../components/home/ImproveHealth";
+import Newsletter from "../components/home/Newsletter";
 import Portfolio from "../components/home/Portfolio";
 import Pricing from "../components/home/Pricing";
 import Services from "../components/home/Services";
@@ -29,6 +30,7 @@ function Home() {
         <Blog />
         <Client />
         <AppointmentForm />
+        <Newsletter />
     </>);
 }
 

@@ -1,3 +1,137 @@
+// import type { JSX } from "react";
+// import { TbActivityHeartbeat } from "react-icons/tb";
+// import Button from "../common/Button";
+// import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+// import { RiScissors2Fill } from "react-icons/ri";
+// import { FaHeart, FaTooth } from "react-icons/fa6";
+
+// function Pricing() {
+
+//     return (<>
+//         <section className="container mx-auto py-20 px-4 sm:px-8 lg:px-12 ">
+//             <div className="text-center mb-12">
+//                 <h3 className="text-3xl font-bold mb-4">We Provide You The Best Treatment In Resonable Price</h3>
+//                 <span className="text-primary text-4xl inline-block mb-4">
+//                     <TbActivityHeartbeat />
+//                 </span>
+//                 <p className="text-gray-600">
+//                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+//                 </p>
+//             </div>
+
+//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+//                 {/* Plastic Surgery */}
+//                 <Pricecard
+//                     icon={<RiScissors2Fill />}
+//                     name="Plastic Surgery"
+//                     price={199}
+//                     points={[
+//                         { text: "Initial Consultation", available: true },
+//                         { text: "Minor Corrective Procedure", available: true },
+//                         { text: "Post-Procedure Dressing", available: true },
+//                         { text: "Advanced Reconstruction", available: false },
+//                         { text: "Full Cosmetic Makeover", available: false },
+//                     ]}
+//                 />
+
+//                 {/* Teeth Whitening */}
+//                 <Pricecard
+//                     icon={<FaTooth />}
+//                     name="Teeth Whitening"
+//                     price={299}
+//                     points={[
+//                         { text: "Dental Examination", available: true },
+//                         { text: "Laser Whitening Session", available: true },
+//                         { text: "Stain Removal Treatment", available: true },
+//                         { text: "Home Whitening Kit", available: false },
+//                         { text: "Advanced Veneer Package", available: false },
+//                     ]}
+//                 />
+
+//                 {/* Heart Surgery */}
+//                 <Pricecard
+//                     icon={<FaHeart />}
+//                     name="Heart Surgery"
+//                     price={399}
+//                     points={[
+//                         { text: "Cardiology Consultation", available: true },
+//                         { text: "ECG & Basic Health Check", available: true },
+//                         { text: "Pre-Surgery Evaluation", available: true },
+//                         { text: "ICU Care & Monitoring", available: false },
+//                         { text: "Post-Surgery Rehabilitation", available: false },
+//                     ]}
+//                 />
+
+//             </div>
+
+//         </section>
+//     </>);
+// }
+
+// export default Pricing
+
+// interface PointItem {
+//     text: string;
+//     available: boolean;
+// }
+
+// interface PriceCardContent {
+//     icon: JSX.Element;
+//     name: string;
+//     price: number;
+//     points: PointItem[];
+// }
+
+// const Pricecard = ({ icon, name, price, points }: PriceCardContent) => {
+//     return (
+//         <div className="
+//             p-8 bg-[#F9F9F9] border border-gray-200 
+//             rounded-xl shadow-md 
+//             h-full flex flex-col 
+//             transition hover:shadow-lg hover:-translate-y-1
+//         ">
+
+//             {/* Top Section */}
+//             <div className="text-center mb-6">
+//                 <span className="text-primary text-5xl inline-block mb-4">
+//                     {icon}
+//                 </span>
+
+//                 <h4 className="text-2xl font-semibold">{name}</h4>
+
+//                 <p className="text-gray-600 mt-2">
+//                     <span className="text-primary font-bold text-3xl">
+//                         ₹{price}
+//                     </span>{" "}
+//                     / Per Visit
+//                 </p>
+//             </div>
+
+//             {/* Points */}
+//             <ul className="text-left space-y-4 mb-6 flex-grow">
+//                 {points.map((point, index) => (
+//                     <li key={index}
+//                         className="flex justify-between items-center text-gray-700 gap-20"
+//                     >
+//                         <p>{point.text}</p>
+//                         {point.available ? (
+//                             <FaCheckCircle className="text-primary text-lg" />
+//                         ) : (
+//                             <FaTimesCircle className="text-red-400 text-lg" />
+//                         )}
+//                     </li>
+//                 ))}
+//             </ul>
+
+//             {/* Button */}
+//             <Button className="w-full mt-auto">
+//                 Book Now
+//             </Button>
+//         </div>
+//     );
+// };
+
 import type { JSX } from "react";
 import { TbActivityHeartbeat } from "react-icons/tb";
 import Button from "../common/Button";
@@ -6,16 +140,17 @@ import { RiScissors2Fill } from "react-icons/ri";
 import { FaHeart, FaTooth } from "react-icons/fa6";
 
 function Pricing() {
-
-    return (<>
-        <section className="container mx-auto py-20 px-4 sm:px-8 lg:px-12 ">
+    return (
+        <section className="container mx-auto py-20 px-4 sm:px-8 lg:px-12">
             <div className="text-center mb-12">
-                <h3 className="text-3xl font-bold mb-4">We Provide You The Best Treatment In Resonable Price</h3>
+                <h3 className="text-3xl font-bold mb-4">
+                    Affordable Treatments with Best Care
+                </h3>
                 <span className="text-primary text-4xl inline-block mb-4">
                     <TbActivityHeartbeat />
                 </span>
                 <p className="text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    We provide high-quality healthcare services at reasonable prices, tailored for every patient.
                 </p>
             </div>
 
@@ -64,12 +199,11 @@ function Pricing() {
                 />
 
             </div>
-
         </section>
-    </>);
+    );
 }
 
-export default Pricing
+export default Pricing;
 
 interface PointItem {
     text: string;
@@ -91,15 +225,12 @@ const Pricecard = ({ icon, name, price, points }: PriceCardContent) => {
             h-full flex flex-col 
             transition hover:shadow-lg hover:-translate-y-1
         ">
-
             {/* Top Section */}
             <div className="text-center mb-6">
                 <span className="text-primary text-5xl inline-block mb-4">
                     {icon}
                 </span>
-
                 <h4 className="text-2xl font-semibold">{name}</h4>
-
                 <p className="text-gray-600 mt-2">
                     <span className="text-primary font-bold text-3xl">
                         ₹{price}
@@ -111,9 +242,7 @@ const Pricecard = ({ icon, name, price, points }: PriceCardContent) => {
             {/* Points */}
             <ul className="text-left space-y-4 mb-6 flex-grow">
                 {points.map((point, index) => (
-                    <li key={index}
-                        className="flex justify-between items-center text-gray-700 gap-20"
-                    >
+                    <li key={index} className="flex justify-between items-center text-gray-700 gap-20">
                         <p>{point.text}</p>
                         {point.available ? (
                             <FaCheckCircle className="text-primary text-lg" />

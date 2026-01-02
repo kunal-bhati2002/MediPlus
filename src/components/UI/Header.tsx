@@ -8,19 +8,19 @@ function Header() {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Doctor", path: "/" },
-    { name: "Services", path: "/" },
-    { name: "Pages", path: "/" },
-    { name: "Blogs", path: "/" },
-    { name: "Contact Us", path: "/" },
+    { name: "Our Doctors", path: "/doctors" },
+    { name: "Medical Services", path: "/" },
+    { name: "Departments", path: "/" },
+    { name: "Health Articles", path: "/" },
+    { name: "Contact", path: "/" },
   ];
 
   return (
     <header className="bg-white shadow-sm fixed w-full top-0 left-0 z-50 ">
-      <nav className="flex justify-between items-center py-3 px-6 sm:px-10 lg:px-[8%] max-w-7xl mx-auto">
+      <nav className="container mx-auto px-4 sm:px-6 md:px-20 flex justify-between items-center py-3">
         {/* Logo */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">
-          MEDIPLUS
+          Mediplus Hospital
         </h1>
 
         {/* Desktop Menu */}
@@ -30,8 +30,7 @@ function Header() {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `hover:text-primary transition ${isActive ? "text-primary" : ""
-                  }`
+                  `hover:text-primary transition ${isActive ? "text-primary" : ""}`
                 }
               >
                 {item.name}
@@ -41,7 +40,7 @@ function Header() {
 
           <li>
             <NavLink to="/">
-              <Button variant="primary">Appointment</Button>
+              <Button variant="primary">Book Appointment</Button>
             </NavLink>
           </li>
         </ul>
@@ -64,15 +63,15 @@ function Header() {
           }`}
       >
         <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
-        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Doctor</NavLink></li>
-        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Services</NavLink></li>
-        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Pages</NavLink></li>
-        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Blogs</NavLink></li>
-        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Contact Us</NavLink></li>
+        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Our Doctors</NavLink></li>
+        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Medical Services</NavLink></li>
+        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Departments</NavLink></li>
+        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Health Articles</NavLink></li>
+        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
         <li>
           <NavLink to="/" onClick={() => setMenuOpen(false)}>
             <button className="bg-primary px-6 py-2 rounded text-white font-semibold hover:bg-primary-dark transition">
-              Appointment
+              Book Appointment
             </button>
           </NavLink>
         </li>

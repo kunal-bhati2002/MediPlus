@@ -31,6 +31,7 @@ function Home() {
         <Client />
         <AppointmentForm />
         <Newsletter />
+        {/* <Team /> */}
     </>);
 }
 

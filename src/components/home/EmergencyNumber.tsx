@@ -57,6 +57,49 @@
 // export default EmergencyNumber;
 
 
+// import Button from "../common/Button";
+
+// function EmergencyNumber() {
+//     return (
+//         <section
+//             className="relative h-[80vh] flex items-center justify-center bg-[url('/images/MRI_scan_photo.webp')] bg-cover  bg-no-repeat bg-fixed"
+//         >
+//             {/* Blue Overlay */}
+//             <div className="absolute inset-0 bg-blue-600/85"></div>
+
+//             {/* Content */}
+//             <div className="relative z-10 text-center text-white px-4 sm:px-6 md:px-10 w-[90%] md:w-[45%]">
+//                 <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-snug">
+//                     Do you need <span className="text-white">Emergency Medical Care?</span>
+//                     <br />
+//                     Call @ 1234 56789
+//                 </h3>
+//                 <p className="text-white/90 mb-8 text-sm md:text-base">
+//                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.
+//                 </p>
+
+//                 <div className="flex justify-center gap-4 flex-wrap">
+//                     <Button
+//                         variant="custom"
+//                         className="bg-white text-primary hover:bg-primary hover:text-white w-auto px-6 font-semibold"
+//                     >
+//                         Contact Now
+//                     </Button>
+
+//                     <Button
+//                         variant="custom"
+//                         className="bg-transparent border border-white hover:bg-white hover:text-primary w-auto px-6 font-semibold"
+//                     >
+//                         Learn More →
+//                     </Button>
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default EmergencyNumber;
+
 import Button from "../common/Button";
 
 function EmergencyNumber() {
@@ -70,18 +113,18 @@ function EmergencyNumber() {
             {/* Content */}
             <div className="relative z-10 text-center text-white px-4 sm:px-6 md:px-10 w-[90%] md:w-[45%]">
                 <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-snug">
-                    Do you need <span className="text-white">Emergency Medical Care?</span>
+                    Need <span className="text-white">Immediate Medical Attention?</span>
                     <br />
-                    Call @ 1234 56789
+                    Call Our 24/7 Hotline: 1234 56789
                 </h3>
                 <p className="text-white/90 mb-8 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.
+                    Mediplus Hospital provides round-the-clock emergency services, staffed by highly trained doctors and medical professionals to handle any urgent situation.
                 </p>
 
                 <div className="flex justify-center gap-4 flex-wrap">
                     <Button
                         variant="custom"
-                        className="bg-white text-primary hover:bg-primary hover:text-white w-auto px-6 font-semibold"
+                        className="bg-primary-dark text-primary hover:bg-primary hover:text-white w-auto px-6 font-semibold"
                     >
                         Contact Now
                     </Button>

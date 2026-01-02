@@ -6,8 +6,11 @@ function AppointmentForm() {
 
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [phone, setPhone] = useState("");
     const [dept, setDept] = useState("");
+    const [doctor, setDoctor] = useState("");
+    const [date, setDate] = useState("");
+    const [message, setMessage] = useState("");
 
     const handleFormSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
@@ -57,14 +60,14 @@ function AppointmentForm() {
 
                     <div className="flex gap-6">
                         <input
-                            type="email"
-                            name="email"
+                            type="tel"
+                            name="tel"
                             autoComplete="off"
                             required
                             placeholder="Phone"
                             className="border border-gray-300 rounded-md px-6 py-3 w-full"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)} />
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)} />
                         <select
                             value={dept}
                             onChange={(e) => setDept(e.target.value)}
@@ -79,8 +82,8 @@ function AppointmentForm() {
                     </div>
                     <div className="flex gap-6">
                         <select
-                            value={dept}
-                            onChange={(e) => setDept(e.target.value)}
+                            value={doctor}
+                            onChange={(e) => setDoctor(e.target.value)}
                             className="rounded-md border border-gray-300 px-6 py-3 bg-white focus:border-blue-600 focus:ring-blue-600 w-full"
                         >
                             <option value="">Select…</option>
@@ -89,24 +92,24 @@ function AppointmentForm() {
                             <option value="d3">Dr. 3</option>
                         </select>
                         <input
-                            type="text"
-                            name="messgae"
-                            autoComplete="off"
+                            type="date"
+                            className="w-full border border-gray-300 rounded-md px-6 py-3"
+                            value={date}
+                            onChange={(e) => setDate(e.target.value)}
                             required
-                            placeholder="Date"
-                            className="border border-gray-300 rounded-md px-6 py-3 w-full"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)} />
+                        />
                     </div>
                     <div>
                         <textarea
                             placeholder="message"
                             rows={5}
                             className="border border-gray-300 rounded-md px-6 py-3 w-full"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
                     <div className="flex gap-16">
-                        <Button >Type your message here...</Button>
+                        <Button >Book Appointment</Button>
                         <p className="text-gray-400 pt-2">(We will confirm by a text message)</p>
                     </div>
                 </form>

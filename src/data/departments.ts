@@ -7,26 +7,20 @@ export const departments = [
     icon: "❤️",
     content: {
       quote:
-        "Compassionate cardiac care with advanced diagnostics for a healthier tomorrow.",
-      desc: `Our Cardiac Clinic provides comprehensive treatments for heart-related
-      conditions using state-of-the-art equipment and internationally approved
-      protocols. From preventive checkups to complex cardiac procedures, our
-      team ensures personalized care for every patient.`,
-
+        "Compassionate cardiac care with advanced diagnostics for a healthier heart.",
+      desc: `At Mediplus Hospital, our Cardiac Clinic provides comprehensive treatments for all heart-related conditions. Using state-of-the-art equipment and globally approved protocols, we deliver personalized care—from preventive checkups to complex cardiac procedures.`,
       points: [
         "Advanced ECG, 2D Echo, and Stress Test diagnostics",
         "Expert cardiologists with 24/7 emergency support",
         "Management of hypertension, arrhythmia, and heart failure",
-        "Post-surgery rehabilitation & lifestyle counselling",
+        "Post-surgery rehabilitation and lifestyle counseling",
       ],
-
       treatments: [
         "Coronary Angiography",
         "Angioplasty with Stent Placement",
         "Pacemaker Implantation",
         "Cardiac Rehabilitation Program",
       ],
-
       image: "/images/cardiac_clinic.webp",
     },
   },
@@ -39,26 +33,20 @@ export const departments = [
     icon: "🧠",
     content: {
       quote:
-        "Advanced neurological care supported by cutting-edge neurodiagnostics.",
-      desc: `Our Neurology Department specializes in treating disorders related
-      to the brain, spinal cord, and peripheral nerves. We combine clinical
-      experience with the latest technology for accurate diagnosis and
-      effective long-term management.`,
-
+        "Advanced neurological care with precise diagnostics and treatment.",
+      desc: `Our Neurology Department specializes in disorders of the brain, spinal cord, and nerves. Combining clinical expertise with cutting-edge technology, we provide accurate diagnosis and long-term management for neurological conditions.`,
       points: [
-        "Comprehensive stroke care & prevention",
+        "Comprehensive stroke care and prevention",
         "Treatment for seizures, epilepsy, and migraines",
-        "Diagnosis of memory disorders including dementia",
-        "Long-term management of Parkinson’s & multiple sclerosis",
+        "Diagnosis and management of memory disorders including dementia",
+        "Long-term management of Parkinson’s and multiple sclerosis",
       ],
-
       treatments: [
         "EEG & Nerve Conduction Study (NCS)",
         "Brain & Spine MRI",
         "Stroke Thrombolysis",
         "Neuro Rehabilitation Therapy",
       ],
-
       image: "/images/neurology_department.webp",
     },
   },
@@ -72,25 +60,19 @@ export const departments = [
     content: {
       quote:
         "A beautiful smile starts with trusted dental care and modern technology.",
-      desc: `Our Dentistry Department offers a complete range of oral
-      healthcare services from routine checkups to advanced cosmetic
-      treatments. We ensure painless, safe, and hygienic procedures with
-      world-class equipment.`,
-
+      desc: `Our Dentistry Department offers a full range of oral healthcare services, from routine checkups to advanced cosmetic treatments. We ensure safe, painless, and hygienic procedures with world-class equipment.`,
       points: [
         "Digital X-ray and painless root canals",
-        "Preventive dentistry for children & adults",
-        "Cosmetic dental procedures including whitening & veneers",
+        "Preventive dentistry for children and adults",
+        "Cosmetic dental procedures including whitening and veneers",
         "Full mouth rehabilitation with implants",
       ],
-
       treatments: [
         "Root Canal Treatment (RCT)",
         "Dental Implants",
         "Orthodontic Braces & Aligners",
         "Teeth Whitening & Smile Designing",
       ],
-
       image: "/images/dentistry_department.webp",
     },
   },
@@ -102,59 +84,46 @@ export const departments = [
     subtitle: "Digestive Health Care",
     icon: "💙",
     content: {
-      quote:
-        "Comprehensive digestive care with advanced endoscopic procedures.",
-      desc: `Our Gastroenterology Department specializes in diagnosing and managing
-      conditions related to the stomach, liver, pancreas, and intestines. With
-      experienced gastroenterologists and modern endoscopy units, we provide
-      accurate and minimally invasive treatments.`,
-
+      quote: "Comprehensive digestive care with modern endoscopic procedures.",
+      desc: `Our Gastroenterology Department specializes in diagnosing and managing conditions related to the stomach, liver, pancreas, and intestines. Our experienced gastroenterologists use advanced endoscopy units for accurate, minimally invasive treatments.`,
       points: [
         "Treatment for acidity, IBS, IBD, and chronic gastritis",
-        "Liver disease management including fatty liver & hepatitis",
-        "Advanced endoscopy & colonoscopy services",
-        "Pancreatic disorder evaluation & treatment",
+        "Liver disease management including fatty liver and hepatitis",
+        "Advanced endoscopy and colonoscopy services",
+        "Pancreatic disorder evaluation and treatment",
       ],
-
       treatments: [
         "Upper GI Endoscopy",
         "Colonoscopy & Polypectomy",
         "Liver FibroScan",
         "ERCP (Endoscopic Retrograde Cholangiopancreatography)",
       ],
-
       image: "/images/gastroenterology_department.webp",
     },
   },
 
-  // 5️⃣ ORTHOPEDAGOGY (Orthopedics)
+  // 5️⃣ ORTHOPEDICS
   {
     id: "orthopedagogy",
-    title: "Orthopedagogy",
+    title: "Orthopedics",
     subtitle: "Bone & Joint Care",
     icon: "🦴",
     content: {
       quote:
         "Trusted orthopedic care to help you move freely and live pain-free.",
-      desc: `The Orthopedics Department provides advanced treatments for bone,
-      joint, ligament, and spine-related conditions. From sports injuries to
-      chronic arthritis, we deliver personalized surgical and non-surgical
-      care.`,
-
+      desc: `Our Orthopedics Department provides advanced treatments for bone, joint, ligament, and spine-related conditions. From sports injuries to chronic arthritis, we deliver personalized surgical and non-surgical care.`,
       points: [
-        "Diagnosis and treatment of fractures & joint injuries",
+        "Diagnosis and treatment of fractures and joint injuries",
         "Arthritis and osteoporosis management",
         "Sports injury care with physiotherapy support",
         "Joint replacement surgeries with rapid recovery programs",
       ],
-
       treatments: [
         "Knee Replacement",
         "Hip Replacement",
         "Arthroscopy (Shoulder/Knee)",
         "Physiotherapy & Rehabilitation Programs",
       ],
-
       image: "/images/orthopedics_department.webp",
     },
   },
